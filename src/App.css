@@ -1,0 +1,95 @@
+body {
+  background-color: #f1f1f1;
+  color: #000000;
+  font-family: 'Lora', serif;
+  margin-top: 4em;
+}
+h1{
+	text-align: center;
+}
+button{
+	border: none;
+	padding: 8px;
+	width: 80px;
+	border-radius: 5px;
+	background-color: #e4d1b7;
+	cursor: pointer;
+	font-family: inherit;
+}
+input{
+	width: 70%;
+	height: 30px;
+	font-family: inherit;
+	border: none;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+.search-section{
+	display: flex;
+	margin: 1em auto;
+	justify-content: center;
+}
+.close{
+  height: 800px;
+  color: #2f423f;
+  font-size:1.5em;
+  padding: 3px 15px ;
+  margin:0 auto;
+  cursor: pointer;
+}
+.books-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px; 
+  }
+  .book-item {
+	border: 1px solid #ccc; 
+	padding: 10px; 
+	border-radius: 5px;
+  }
+  
+.modal-content {
+	max-height: 500px;
+	overflow-y: auto;
+  }
+  
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #e4e3e3;
+    color: #282c34;
+	border-radius: 12px;
+	padding: 20px;
+	width: 400px;
+	max-width: 90%;
+}  
+.modal img{
+	width: 150px !important;
+  margin: 0 auto ;
+}
+.modal > .product-title{
+	font-size: 12px;
+}
+.modal > .product-description{
+	font-size: 5px;
+}
+  @media (max-width: 1200px) {
+	.books-container {
+	  grid-template-columns: repeat(3, 1fr);
+	}
+  }
+  
+  @media (max-width: 900px) {
+	.books-container {
+	  grid-template-columns: repeat(2, 1fr);
+	}
+  }
+  
+  @media (max-width: 600px) {
+	.books-container {
+	  grid-template-columns: repeat(1, 1fr);
+	}
+  }
+  
